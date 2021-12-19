@@ -318,7 +318,6 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     margin-bottom: 20px;
     -webkit-box-shadow: 0px 0px 4px 0px;
             box-shadow: 0px 0px 4px 0px;
-    background-color: hotpink;
   }
   #Main > .AllItems > .Item {
     background-color: white;
@@ -986,7 +985,6 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     margin-bottom: 20px;
     -webkit-box-shadow: 0px 0px 4px 0px;
             box-shadow: 0px 0px 4px 0px;
-    background-color: hotpink;
   }
   #Main > .AllItems > .Item {
     background-color: white;
