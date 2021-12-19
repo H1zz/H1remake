@@ -1,0 +1,1110 @@
+@charset "UTF-8";
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*
+文字尺寸 單位 px (固定值) em(百分比，會疊加父框架設定的值) rem(百分比，不會疊加父框架的值)
+em 基礎為 1em=16px ; rem 基礎為 1rem=16px
+*/
+@media screen and (max-width: 576px) {
+  header .nav1 {
+    display: none;
+  }
+  header .nav2 {
+    display: none;
+  }
+  header .Mnav1 {
+    display: block;
+    /*
+    浮動對齊的問題 float
+    1. #Logo 與 #fav 物件的父框架=nav，無寬度
+    2. nav的父框架=header，高度消失(因內容物浮起)
+    解決方式
+    1. nav的父框架=header，給予高度或nav給予高度
+    2. 清除浮動狀態，由nav設定
+    */
+    float: left;
+    background-color: white;
+    width: 100%;
+    border-bottom: #a1a1a1 solid 1px;
+  }
+  header .Mnav1 #Logo {
+    width: 15vw;
+    float: left;
+  }
+  header .Mnav1 #fav {
+    width: 15vw;
+    float: right;
+  }
+  header .Mnav1Sup {
+    width: 100%;
+    height: 15vw;
+  }
+  header .SearchM {
+    margin: 15px 20px 10px 20px;
+  }
+  header .SearchM #SearchM {
+    width: 100%;
+    height: 10vw;
+  }
+  header #Navbar {
+    display: block;
+    z-index: 10;
+    background-color: #f09293;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header #Navbar #menuM {
+    float: left;
+    height: 15vw;
+  }
+  header #Navbar #menuM #Logo {
+    width: 20vw;
+  }
+  header #Navbar #menuM #fav {
+    width: 80vw;
+  }
+  header #Navbar #homeM {
+    float: left;
+    height: 15vw;
+  }
+  header #Navbar #homeM #Logo {
+    width: 20vw;
+  }
+  header #Navbar #homeM #fav {
+    width: 80vw;
+  }
+  header #Navbar #mailM {
+    float: left;
+    height: 15vw;
+  }
+  header #Navbar #mailM #Logo {
+    width: 20vw;
+  }
+  header #Navbar #mailM #fav {
+    width: 80vw;
+  }
+  header #Navbar #cartM {
+    float: left;
+    height: 15vw;
+  }
+  header #Navbar #cartM #Logo {
+    width: 20vw;
+  }
+  header #Navbar #cartM #fav {
+    width: 80vw;
+  }
+  header #Navbar #memberM {
+    float: left;
+    height: 15vw;
+  }
+  header #Navbar #memberM #Logo {
+    width: 20vw;
+  }
+  header #Navbar #memberM #fav {
+    width: 80vw;
+  }
+  article {
+    background-color: #dddddd;
+  }
+  article #FourSort {
+    display: none;
+  }
+  article #MFourSort {
+    display: block;
+    margin-top: 20px;
+    background-color: white;
+    line-height: 20vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 1px 0px;
+            box-shadow: 0px 0px 1px 0px;
+  }
+  article #MFourSort #women {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MFourSort #men {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MFourSort #kids {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MFourSort #baby {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  article #MSixSort {
+    display: block;
+    margin-top: 20px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 1px 0px;
+            box-shadow: 0px 0px 1px 0px;
+  }
+  article #MSixSort #one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 20vw;
+    text-align: center;
+    border-bottom: 0.1px grey solid;
+  }
+  article #MSixSort #one #one1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MSixSort #one #one2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  article #MSixSort #two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 20vw;
+    text-align: center;
+    border-bottom: 0.1px grey solid;
+  }
+  article #MSixSort #two #two1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MSixSort #two #two2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  article #MSixSort #three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 20vw;
+    text-align: center;
+    border-bottom: 0.1px grey solid;
+  }
+  article #MSixSort #three #three1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MSixSort #three #three2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  article section {
+    margin-top: 20px;
+  }
+  footer .footers {
+    text-align: center;
+  }
+  footer .footers p {
+    line-height: 35px;
+  }
+  footer .Blank {
+    width: 100%;
+    height: 15vw;
+  }
+  #Main #Banner {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  #Main #Banner .Btn {
+    color: white;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 5;
+    top: 222.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+  }
+  #Main #Banner .LeftBtn {
+    left: 2.5vw;
+  }
+  #Main #Banner .RightBtn {
+    right: 2.5vw;
+  }
+  #Main #Banner #ImgBox {
+    width: 100vw;
+    list-style-type: none;
+    padding-bottom: 500px;
+    background-color: #ff5100;
+  }
+  #Main #Banner #ImgBox li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 495px;
+  }
+  #Main #Banner #ImgBox .Item01 {
+    width: 100vw;
+    background-image: url(../../img/banner/005.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #Main #Banner #ImgBox .Item02 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/004.jpg);
+  }
+  #Main #Banner #ImgBox .Item03 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/003.jpg);
+  }
+  #Main #Banner #ImgBox .Item04 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/002.jpg);
+  }
+  #Main #Banner #ImgBox .Item05 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/005.jpg);
+  }
+  #Main .Sort {
+    padding-top: 15px;
+  }
+  #Main > .AllItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 4px 0px;
+            box-shadow: 0px 0px 4px 0px;
+    background-color: hotpink;
+  }
+  #Main > .AllItems > .Item {
+    background-color: white;
+    width: 50%;
+    padding-bottom: 20px;
+  }
+  #Main > .AllItems > .Item > .images > a > img {
+    border-radius: 15px;
+  }
+  #Main > .AllItems > .Item > .script1 {
+    padding: 5px 0px 5px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #Main > .AllItems > .Item > .script1 > #sort1 {
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
+  }
+  #Main > .AllItems > .Item > .script1 > #size1 {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+  #Main > .AllItems > .Item > .script2 {
+    padding-left: 10px;
+    list-style-type: none;
+  }
+  #Main > .AllItems > .Item > .script2 > li {
+    padding: 5px 0px 5px 0px;
+  }
+  #Main > .AllItems > .Item > .script2 #name {
+    font-weight: bolder;
+  }
+  #Main > .AllItems > .Item > .script2 #sales {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: red;
+  }
+  #Main .script2 {
+    background-color: white;
+    padding: 20px;
+  }
+  #Main .Banner2 {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  #Main .Banner2 .btnmore {
+    -webkit-box-shadow: 0px 0px 5px 0px;
+            box-shadow: 0px 0px 5px 0px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #Main .Banner2 .btnmore .blank1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner2 .btnmore .more {
+    -webkit-box-flex: 8;
+        -ms-flex: 8;
+            flex: 8;
+    line-height: 60px;
+    background-color: white;
+    text-align: center;
+    border: 1px black solid;
+  }
+  #Main .Banner2 .btnmore .blank2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner2 .Btn {
+    color: white;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 5;
+    top: 147.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+  }
+  #Main .Banner2 .LeftBtn {
+    left: 2.5vw;
+  }
+  #Main .Banner2 .RightBtn {
+    right: 2.5vw;
+  }
+  #Main .Banner2 #ImgBox2 {
+    width: 100vw;
+    list-style-type: none;
+    padding-bottom: 350px;
+    background-color: #d98ffc;
+  }
+  #Main .Banner2 #ImgBox2 li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 345px;
+  }
+  #Main .Banner2 #ImgBox2 .Item006 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/005.jpg);
+  }
+  #Main .Banner2 #ImgBox2 .Item007 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/004.jpg);
+  }
+  #Main .Banner2 #ImgBox2 .Item008 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/003.jpg);
+  }
+  #Main .Banner2 #ImgBox2 .Item009 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/002.jpg);
+  }
+  #Main .Banner2 #ImgBox2 .Item010 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/008.jpg);
+  }
+  #Main .script3 {
+    background-color: white;
+    padding: 20px;
+  }
+  #Main .Banner3 {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  #Main .Banner3 .btnmore {
+    -webkit-box-shadow: 0px 0px 5px 0px;
+            box-shadow: 0px 0px 5px 0px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #Main .Banner3 .btnmore .blank1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner3 .btnmore .more {
+    -webkit-box-flex: 8;
+        -ms-flex: 8;
+            flex: 8;
+    line-height: 60px;
+    background-color: white;
+    text-align: center;
+    border: 1px black solid;
+  }
+  #Main .Banner3 .btnmore .blank2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner3 .Btn {
+    color: white;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 5;
+    top: 147.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+  }
+  #Main .Banner3 .LeftBtn {
+    left: 2.5vw;
+  }
+  #Main .Banner3 .RightBtn {
+    right: 2.5vw;
+  }
+  #Main .Banner3 #ImgBox2 {
+    width: 100vw;
+    list-style-type: none;
+    padding-bottom: 350px;
+    background-color: #d98ffc;
+  }
+  #Main .Banner3 #ImgBox2 li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 345px;
+  }
+  #Main .Banner3 #ImgBox2 .Item011 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/005.jpg);
+  }
+  #Main .Banner3 #ImgBox2 .Item012 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/004.jpg);
+  }
+  #Main .Banner3 #ImgBox2 .Item013 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/003.jpg);
+  }
+  #Main .Banner3 #ImgBox2 .Item014 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/002.jpg);
+  }
+  #Main .Banner3 #ImgBox2 .Item015 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/009.jpg);
+  }
+  #Main .script4 {
+    background-color: white;
+    padding: 20px;
+  }
+  #Main .Banner4 {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  #Main .Banner4 .btnmore {
+    -webkit-box-shadow: 0px 0px 5px 0px;
+            box-shadow: 0px 0px 5px 0px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #Main .Banner4 .btnmore .blank1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner4 .btnmore .more {
+    -webkit-box-flex: 8;
+        -ms-flex: 8;
+            flex: 8;
+    line-height: 60px;
+    background-color: white;
+    text-align: center;
+    border: 1px black solid;
+  }
+  #Main .Banner4 .btnmore .blank2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner4 .Btn {
+    color: white;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 5;
+    top: 147.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+  }
+  #Main .Banner4 .LeftBtn {
+    left: 2.5vw;
+  }
+  #Main .Banner4 .RightBtn {
+    right: 2.5vw;
+  }
+  #Main .Banner4 #ImgBox2 {
+    width: 100vw;
+    list-style-type: none;
+    padding-bottom: 350px;
+    background-color: #d98ffc;
+  }
+  #Main .Banner4 #ImgBox2 li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 345px;
+  }
+  #Main .Banner4 #ImgBox2 .Item016 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/005.jpg);
+  }
+  #Main .Banner4 #ImgBox2 .Item017 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/004.jpg);
+  }
+  #Main .Banner4 #ImgBox2 .Item018 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/003.jpg);
+  }
+  #Main .Banner4 #ImgBox2 .Item019 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/002.jpg);
+  }
+  #Main .Banner4 #ImgBox2 .Item020 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/010.jpg);
+  }
+}
+
+@media screen and (min-width: 576px) {
+  header .nav1 {
+    display: none;
+  }
+  header .nav2 {
+    display: none;
+  }
+  header .Mnav1 {
+    display: block;
+    /*
+      浮動對齊的問題 float
+      1. #Logo 與 #fav 物件的父框架=nav，無寬度
+      2. nav的父框架=header，高度消失(因內容物浮起)
+      解決方式
+      1. nav的父框架=header，給予高度或nav給予高度
+      2. 清除浮動狀態，由nav設定
+      */
+    float: left;
+    background-color: #fbff00;
+    width: 100%;
+    border-bottom: #a1a1a1 solid 1px;
+  }
+  header .Mnav1 #Logo {
+    width: 15vw;
+    float: left;
+  }
+  header .Mnav1 #fav {
+    width: 15vw;
+    float: right;
+  }
+  header .Mnav1Sup {
+    width: 100%;
+    height: 15vw;
+  }
+  header .SearchM {
+    margin: 10px 20px 10px 20px;
+  }
+  header .SearchM #SearchM {
+    width: 100%;
+    height: 10vw;
+  }
+  header #Navbar {
+    display: block;
+    background-color: #ffd9f9;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 10;
+  }
+  header #Navbar #menuM {
+    float: left;
+    height: 15vw;
+  }
+  header #Navbar #menuM #Logo {
+    width: 20vw;
+  }
+  header #Navbar #menuM #fav {
+    width: 80vw;
+  }
+  header #Navbar #homeM {
+    float: left;
+    height: 15vw;
+  }
+  header #Navbar #homeM #Logo {
+    width: 20vw;
+  }
+  header #Navbar #homeM #fav {
+    width: 80vw;
+  }
+  header #Navbar #mailM {
+    float: left;
+    height: 15vw;
+  }
+  header #Navbar #mailM #Logo {
+    width: 20vw;
+  }
+  header #Navbar #mailM #fav {
+    width: 80vw;
+  }
+  header #Navbar #cartM {
+    float: left;
+    height: 15vw;
+  }
+  header #Navbar #cartM #Logo {
+    width: 20vw;
+  }
+  header #Navbar #cartM #fav {
+    width: 80vw;
+  }
+  header #Navbar #memberM {
+    float: left;
+    height: 15vw;
+  }
+  header #Navbar #memberM #Logo {
+    width: 20vw;
+  }
+  header #Navbar #memberM #fav {
+    width: 80vw;
+  }
+  article #Banner {
+    background-color: aqua;
+  }
+  article #FourSort {
+    display: none;
+  }
+  article #MFourSort {
+    display: block;
+    background-color: grey;
+    height: 15vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  article #MSixSort {
+    display: block;
+    background-color: hotpink;
+  }
+  article #MSixSort #one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15vw;
+  }
+  article #MSixSort #two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15vw;
+  }
+  article #MSixSort #three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 15vw;
+  }
+  footer .Blank {
+    width: 100%;
+    height: 15vw;
+  }
+  #Main #Banner {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  #Main #Banner .Btn {
+    color: white;
+    width: 20px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 5;
+    top: 125px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+  }
+  #Main #Banner .LeftBtn {
+    left: 2.5vw;
+  }
+  #Main #Banner .RightBtn {
+    right: 2.5vw;
+  }
+  #Main #Banner #ImgBox {
+    width: 100vw;
+    list-style-type: none;
+    padding-bottom: 355px;
+    background-color: #d98ffc;
+  }
+  #Main #Banner #ImgBox li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 350px;
+  }
+  #Main #Banner #ImgBox .Item01 {
+    width: 100vw;
+    background-image: url(../../img/banner/005.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #Main #Banner #ImgBox .Item02 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/004.jpg);
+  }
+  #Main #Banner #ImgBox .Item03 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/003.jpg);
+  }
+  #Main #Banner #ImgBox .Item04 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/002.jpg);
+  }
+  #Main #Banner #ImgBox .Item05 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/005.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .Mnav1 {
+    display: block;
+    /*
+        浮動對齊的問題 float
+        1. #Logo 與 #fav 物件的父框架=nav，無寬度
+        2. nav的父框架=header，高度消失(因內容物浮起)
+        解決方式
+        1. nav的父框架=header，給予高度或nav給予高度
+        2. 清除浮動狀態，由nav設定
+        */
+    float: left;
+    background-color: #1900ff;
+    width: 100%;
+    border-bottom: #a1a1a1 solid 1px;
+  }
+  header .Mnav1 #Logo {
+    width: 15vw;
+    float: left;
+  }
+  header .Mnav1 #fav {
+    width: 15vw;
+    float: right;
+  }
+  #Main #Banner {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  #Main #Banner .Btn {
+    color: white;
+    width: 20px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 5;
+    top: 247.5px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+  }
+  #Main #Banner .LeftBtn {
+    left: 2.5vw;
+  }
+  #Main #Banner .RightBtn {
+    right: 2.5vw;
+  }
+  #Main #Banner #ImgBox {
+    width: 100vw;
+    list-style-type: none;
+    padding-bottom: 600px;
+    background-color: #d98ffc;
+  }
+  #Main #Banner #ImgBox li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 595px;
+  }
+  #Main #Banner #ImgBox .Item01 {
+    width: 100vw;
+    background-image: url(../../img/banner/005.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #Main #Banner #ImgBox .Item02 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/004.jpg);
+  }
+  #Main #Banner #ImgBox .Item03 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/003.jpg);
+  }
+  #Main #Banner #ImgBox .Item04 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/002.jpg);
+  }
+  #Main #Banner #ImgBox .Item05 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/005.jpg);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header .nav1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .nav1 .null1 {
+    width: 30vw;
+  }
+  header .nav1 #nav1nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50vw;
+    list-style-type: none;
+  }
+  header .nav1 #nav1nav .SignUp {
+    padding: 0px 10px 0px 10px;
+    border-right: grey solid 0.5px;
+  }
+  header .nav1 #nav1nav .LogIn {
+    padding: 0px 10px 0px 10px;
+    border-right: grey solid 0.5px;
+  }
+  header .nav1 #nav1nav .Member {
+    padding: 0px 10px 0px 10px;
+    border-right: grey solid 0.5px;
+  }
+  header .nav1 #nav1nav .Favorite {
+    padding: 0px 10px 0px 10px;
+    border-right: grey solid 0.5px;
+  }
+  header .nav1 #nav1nav .Cart {
+    padding: 0px 10px 0px 10px;
+    border-right: grey solid 0.5px;
+  }
+  header .nav1 #nav1nav .Mail {
+    padding: 0px 10px 0px 10px;
+    border-right: grey solid 0.5px;
+  }
+  header .nav1 #nav1nav .Service {
+    padding: 0px 10px 0px 10px;
+    border-right: grey solid 0.5px;
+  }
+  header .nav1 #nav1Search {
+    width: 20vw;
+  }
+  header .nav2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .nav2 #Sort1 {
+    width: 30vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  header .nav2 #Sort1 ul {
+    display: none;
+  }
+  header .nav2 .null {
+    width: 30vw;
+  }
+  header .nav2 #nav2nav {
+    width: 40vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  header .nav2 #nav2nav .Info {
+    height: 20px;
+    background-color: #cfcfcf;
+  }
+  header .Mnav1 {
+    display: none;
+  }
+  header .Mnav1Sup {
+    display: none;
+  }
+  header .SearchM {
+    display: none;
+  }
+  header #Navbar {
+    display: none;
+  }
+  article #Banner {
+    background-color: springgreen;
+  }
+  article #MFourSort {
+    display: none;
+  }
+  article #MSixSort {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  article #Banner {
+    background-color: #ff9100;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  article #Banner {
+    background-color: #0077ff;
+  }
+}

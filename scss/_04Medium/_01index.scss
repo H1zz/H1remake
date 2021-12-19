@@ -1,0 +1,31 @@
+// 呼叫 html 標籤，例如: nav ，稱作 類型選擇
+// 呼叫 id ，例如<li id="test"></li>，id="test"，「#」ID選擇器；「#test」
+// 呼叫 class，class="test1"，「.」類別選擇器；「.test1」
+// scss 1.巢狀寫法 2.變數 $name
+
+header {
+  .Mnav1 {
+    @include DB;
+    /*
+        浮動對齊的問題 float
+        1. #Logo 與 #fav 物件的父框架=nav，無寬度
+        2. nav的父框架=header，高度消失(因內容物浮起)
+        解決方式
+        1. nav的父框架=header，給予高度或nav給予高度
+        2. 清除浮動狀態，由nav設定
+        */
+    float: left;
+    background-color: rgb(25, 0, 255);
+    width: 100%;
+    border-bottom: rgb(161, 161, 161) solid 1px;
+    // display: flex;
+    #Logo {
+      width: $W10 * 1.5;
+      float: left;
+    }
+    #fav {
+      width: $W10 * 1.5;
+      float: right;
+    }
+  }
+}

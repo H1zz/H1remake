@@ -1,0 +1,94 @@
+header {
+  .nav1 {
+    display: flex;
+    // 撐開的空白
+    .null1 {
+      width: $W10 * 3;
+    }
+    #nav1nav {
+      display: flex;
+      width: $W10 * 5;
+      @include liDN;
+      .SignUp {
+        padding: 0px 10px 0px 10px;
+        border-right: grey solid 0.5px;
+      }
+      .LogIn {
+        padding: 0px 10px 0px 10px;
+        border-right: grey solid 0.5px;
+      }
+      .Member {
+        padding: 0px 10px 0px 10px;
+        border-right: grey solid 0.5px;
+      }
+      .Favorite {
+        padding: 0px 10px 0px 10px;
+        border-right: grey solid 0.5px;
+      }
+      .Cart {
+        padding: 0px 10px 0px 10px;
+        border-right: grey solid 0.5px;
+      }
+      .Mail {
+        padding: 0px 10px 0px 10px;
+        border-right: grey solid 0.5px;
+      }
+      .Service {
+        padding: 0px 10px 0px 10px;
+        border-right: grey solid 0.5px;
+      }
+    }
+    #nav1Search {
+      width: $W10 * 2;
+    }
+  }
+  .nav2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    #Sort1 {
+      width: $W10 * 3;
+      display: flex;
+      @include liDN;
+      ul {
+        @include DN;
+      }
+    }
+    // 撐開的空格
+    .null {
+      width: $W10 * 3;
+    }
+    #nav2nav {
+      width: $W10 * 4;
+      display: flex;
+      @include liDN;
+      .Info {
+        height: 20px;
+        background-color: rgb(207, 207, 207);
+      }
+    }
+  }
+  .Mnav1 {
+    @include DN;
+  }
+  .Mnav1Sup {
+    @include DN;
+  }
+  .SearchM {
+    @include DN;
+  }
+  #Navbar {
+    @include DN;
+  }
+}
+article {
+  #Banner {
+    background-color: springgreen;
+  }
+  #MFourSort {
+    @include DN;
+  }
+  #MSixSort {
+    @include DN;
+  }
+}

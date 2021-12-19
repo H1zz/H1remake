@@ -1,0 +1,74 @@
+// 頁面(瀏覽器)與物件的間距:外間距--上下為0，左右自動；內間距上下左右為0；設定在「*」(通用選擇器)
+* {
+  // 外間距--上下為0，左右自動 margin；若物件寬度小於100%時，物件將會自動 垂直 置中
+  margin: 0 auto;
+  // 內間距上下左右為0 padding
+  padding: 0;
+}
+// 圖片等比控制
+img {
+  // 寬度為100%；高度自動
+  width: 100%;
+  height: auto;
+}
+%DN {
+  // 隱藏
+  display: none;
+}
+$W10: 10vw;
+@mixin DN {
+  display: none;
+}
+
+/*
+文字尺寸 單位 px (固定值) em(百分比，會疊加父框架設定的值) rem(百分比，不會疊加父框架的值)
+em 基礎為 1em=16px ; rem 基礎為 1rem=16px
+*/
+$Trem: 1rem;
+
+@mixin DB {
+  display: block;
+}
+
+@mixin ClearFloat {
+  clear: both;
+}
+// 計算  Logo 與 fav 之間的寬度 手機裝置
+@mixin LFW($WM, $WA) {
+  //計算區 1.設變數(承載值的物件名稱)$WM=倍數 $WA=加的數值
+  $LogoW: $W10 * $WM + $WA;
+  // fav寬度=父框架的總寬度(100)-Logo寬度(85)
+  $favW: $W10 * 10-$LogoW;
+  // 連動 計算寬度 Logo 與 fav
+  // 呼叫 id(標籤 或 id class)
+  #Logo {
+    // 寬度
+    width: $LogoW;
+  }
+  #fav {
+    // 寬度
+    width: $favW;
+  }
+}
+@mixin liDN {
+  list-style-type: none;
+}
+@mixin BGPhoto($Postion, $Size, $Folder, $Image) {
+  // 變數設定1.對齊 $Postion 2.尺寸 $Size 3.資料夾位置 $Folder 4.圖片 $Image
+  // 問題:路徑無法直接讀取變數名稱
+  // 解答:scss提供的語法，插值寫法(基於javascript的es6語法)，#{自訂名稱(只能英數)}，例如:#{$Image}，寫在路徑上
+  width: $W10 * 10;
+  // 不重複
+  background-repeat: no-repeat;
+  // 背景圖片 置中對齊
+  background-position: $Postion;
+  // 背景圖片尺寸
+  background-size: $Size;
+  // 背景圖片
+  background-image: url(../../img/#{$Folder}/#{$Image});
+}
+// 圓角矩形
+@mixin Rounded($Num) {
+  // 邊框角度設定，建議單位為像素
+  border-radius: $Num + px;
+}

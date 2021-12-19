@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 文字編碼方式 萬國碼 -->
+    <meta charset="UTF-8">
+    <!-- 伺服器屬性 內容:IE 瀏覽器 = edge 瀏覽器(相容性) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 響應式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 外部樣式連結 -->
+    <link rel="stylesheet" href="dist/style/style.min.css">
+    <!-- 網頁標題 (唯一標籤) -->
+    <title>購物車</title>
+</head>
+<body>
+    <header>
+        <!-- 第一層導覽 -->
+        <div class="nav1">
+            <!-- 撐開的空白 -->
+            <p class="null1"></p>
+            <!-- 導覽 -->
+            <ul id="nav1nav">
+                <li class="SignUp">註冊</li>
+                <li class="LogIn">登入</li>
+                <li class="Member">我的帳戶</li>
+                <li class="Favorite">我的最愛</li>
+                <li class="Cart">購物車</li>
+                <li class="Mail">站內信</li>
+                <li class="Service">聯絡客服</li>          
+            </ul>
+            <input id="nav1Search" type="搜尋" placeholder="請輸入商品名稱" style="text-align: left;">
+        </div>
+        <!-- 第二層導覽 -->
+        <div class="nav2">
+            <ul id="Sort1">    
+                <li class="Logo">UNIQLO</li>           
+                <li class="Women">WOMEN</li>
+                <ul class="WomenSort">
+                    <li>上衣類</li>
+                    <li>下身類</li>
+                </ul>
+                <li class="Men">MEN</li>
+                <ul class="MenSort">
+                    <li>上衣類</li>
+                    <li>下身類</li>
+                </ul>
+                <li class="Kids">KIDS</li>
+                <ul class="KidsSort">
+                    <li>上衣類</li>
+                    <li>下身類</li>
+                </ul>
+                <li class="Baby">BABY</li>
+                <ul class="BabySort">
+                    <li>上衣類</li>
+                    <ul>
+                        <li>1</li>
+                    </ul>
+                    <li>下身類</li>
+                </ul>
+            </ul>
+            <!-- 撐開的空白null -->
+            <p class="null"></p>
+            <!-- 導覽 -->
+            <ul id="nav2nav">
+                <li class="Info">企業資訊</li>
+                <li class="Collection">會員募集中</li>
+                <li class="QA">常見問題</li>
+                <li class="Location">店鋪資訊</li>
+                <li class="Subscrib">訂閱電子報</li>
+            </ul>
+        </div>   
+        <!-- 手機板LOGO+FAV -->
+        <div class="Mnav1">
+            <div id="Logo">
+                <!-- <h1>UNIQLO</h1> -->
+                <img id="AnnLogo" src="img/logo.svg" alt="Logo">
+            </div>  
+            <!-- 手機板最愛 -->
+            <div id="fav">
+                <img id="favimg" src="img/favorite.svg" alt="最愛">
+            </div>
+        </div>
+        <!-- 支撐LOGO+FAV -->
+        <div class="Mnav1Sup">            
+        </div>
+        <!-- 手機板搜尋 -->
+        <div class="SearchM">            
+            <input id="SearchM" type="搜尋" placeholder="請輸入商品名稱M" style="text-align: center;">  
+        </div>
+        <!-- 手機板導覽 -->
+        <div id="Navbar">
+            <img id="menuM" src="img/menu.svg" alt="主選單">
+            <img id="homeM" src="img/home.svg" alt="首頁">
+            <img id="mailM" src="img/mail.svg" alt="站內信">
+            <img id="cartM" src="img/cart.svg" alt="購物車">
+            <img id="memberM" src="img/member.svg" alt="我的帳戶">
+        </div>           
+    </header>
+    
+    <article id="Main">
+        <!-- 網頁內容 隨著頁面內容而更動，首頁廣告輪播區 -->
+        <div id="Banner">
+            <div class="Btn LeftBtn"><</div>
+            <div class="Btn RightBtn">></div>
+            <ul id="ImgBox">
+                <li class="Item01"></li>
+                <li class="Item02"></li>
+                <li class="Item03"></li>
+                <li class="Item04"></li>
+                <li class="Item05"></li>
+                <div id="blank">
+                    <!-- <img src="img/banner/006.png" alt=""> -->
+                </div>
+            </ul>
+        </div>
+        <!-- 四大分類 -->
+        <div id="FourSort">
+            <article>
+                <h1>週週新話題</h1>
+                <li>WOMEN</li>
+                <li>MEN</li>
+                <li>KIDS</li>
+                <li>BABY</li>
+            </article>
+            
+            <article>
+                <h1>超優惠專區</h1>
+                <li>WOMEN</li>
+                <li>MEN</li>
+                <li>KIDS</li>
+                <li>BABY</li>
+            </article>
+    
+            <article>
+                <h1>期間限定專區</h1>
+                <li>WOMEN</li>
+                <li>MEN</li>
+                <li>KIDS</li>
+                <li>BABY</li>
+            </article>
+    
+            <article>
+                <h1>設計師聯名系列</h1>
+                <li>WOMEN</li>
+                <li>MEN</li>
+                <li>KIDS</li>
+                <li>BABY</li>
+            </article>
+    
+            <article>
+                <h1>較小-較大尺碼</h1>
+                <li>WOMEN</li>
+                <li>MEN</li>
+                <li>KIDS</li>
+                <li>BABY</li>
+            </article>
+        </div>
+
+        <!-- 手機板 四大分類 -->
+        <div id="MFourSort">
+            <div id="women">WOMEN</div>
+            <div id="men">MEN</div>
+            <div id="kids">KIDS</div>
+            <div id="baby">BABY</div>
+        </div>
+
+        <!-- 手機板 六分類 -->
+        <div id="MSixSort">
+            <div id="one">
+                <div id="one1">週週話題新品</div>
+                <div id="one2">期間限定優惠</div>
+            </div>
+            <div id="two">
+                <div id="two1">超值精選</div>
+                <div id="two2">較小-較大尺碼</div>
+            </div>
+            <div id="three">
+                <div id="three1">網路/超大型店獨家</div>
+                <div id="three2">TOP10熱銷榜單</div>
+            </div>
+        </div>
+
+        <div class="Sort">
+            <h1>商品類別</h1>
+        </div>
+
+        <!-- 商品頁面 -->
+        <section class="AllItems">  
+            <div class="Item">
+                <div class="images">
+                    <a href="javascript:;">
+                        <img src="img/items/kirby.png" alt="">
+                    </a>
+                </div>
+                <ul class="script1">
+                    <li id="sort1">玩具</li>
+                    <li id="size1">One-Size</li>
+                </ul>
+                <ul class="script2">
+                    <li id="name">KIRBY</li>
+                    <li id="sales">NT$<span>800</span>元</li>
+                    <li id="origin">原價NT$<span><s>1000</s></span>元</li>
+                </ul>
+                <!-- span行內範圍 s刪除線 -->
+            </div>
+            <div class="Item">
+                <div class="images">
+                    <a href="javascript:;">
+                        <img src="img/items/kirby.png" alt="">
+                    </a>
+                </div>
+                <ul class="script1">
+                    <li id="sort1">玩具</li>
+                    <li id="size1">One-Size</li>
+                </ul>
+                <ul class="script2">
+                    <li id="name">KIRBY</li>
+                    <li id="sales">NT$<span>800</span>元</li>
+                    <li id="origin">原價NT$<span><s>1000</s></span>元</li>
+                </ul>
+                <!-- span行內範圍 s刪除線 -->
+            </div>
+            <div class="Item">
+                <div class="images">
+                    <a href="javascript:;">
+                        <img src="img/items/kirby.png" alt="">
+                    </a>
+                </div>
+                <ul class="script1">
+                    <li id="sort1">玩具</li>
+                    <li id="size1">One-Size</li>
+                </ul>
+                <ul class="script2">
+                    <li id="name">KIRBY</li>
+                    <li id="sales">NT$<span>800</span>元</li>
+                    <li id="origin">原價NT$<span><s>1000</s></span>元</li>
+                </ul>
+                <!-- span行內範圍 s刪除線 -->
+            </div>
+            <div class="Item">
+                <div class="images">
+                    <a href="javascript:;">
+                        <img src="img/items/kirby.png" alt="">
+                    </a>
+                </div>
+                <ul class="script1">
+                    <li id="sort1">玩具</li>
+                    <li id="size1">One-Size</li>
+                </ul>
+                <ul class="script2">
+                    <li id="name">KIRBY</li>
+                    <li id="sales">NT$<span>800</span>元</li>
+                    <li id="origin">原價NT$<span><s>1000</s></span>元</li>
+                </ul>
+                <!-- span行內範圍 s刪除線 -->
+            </div>
+            <div class="Item">
+                <div class="images">
+                    <a href="javascript:;">
+                        <img src="img/items/kirby.png" alt="">
+                    </a>
+                </div>
+                <ul class="script1">
+                    <li id="sort1">玩具</li>
+                    <li id="size1">One-Size</li>
+                </ul>
+                <ul class="script2">
+                    <li id="name">KIRBY</li>
+                    <li id="sales">NT$<span>800</span>元</li>
+                    <li id="origin">原價NT$<span><s>1000</s></span>元</li>
+                </ul>
+                <!-- span行內範圍 s刪除線 -->
+            </div>
+            <div class="Item">
+                <div class="images">
+                    <a href="javascript:;">
+                        <img src="img/items/kirby.png" alt="">
+                    </a>
+                </div>
+                <ul class="script1">
+                    <li id="sort1">玩具</li>
+                    <li id="size1">One-Size</li>
+                </ul>
+                <ul class="script2">
+                    <li id="name">KIRBY</li>
+                    <li id="sales">NT$<span>800</span>元</li>
+                    <li id="origin">原價NT$<span><s>1000</s></span>元</li>
+                </ul>
+                <!-- span行內範圍 s刪除線 -->
+            </div> 
+        </section>
+        
+        <h1 class="script2">溫馨送禮推薦專區</h1> 
+        <div class="Banner2">           
+            <div class="Btn LeftBtn"><</div>
+            <div class="Btn RightBtn">></div>
+            <ul id="ImgBox2">
+                <li class="Item006"></li>
+                <li class="Item007"></li>
+                <li class="Item008"></li>
+                <li class="Item009"></li>
+                <li class="Item010"></li>
+            </ul>
+            <div class="btnmore">
+                <li class="blank1"></li>
+                <li class="more">看更多 TOP10 熱銷推薦商品</li>
+                <li class="blank2"></li>
+            </div>                       
+        </div>
+        <h1 class="script3">聯名系列</h1> 
+        <div class="Banner3">           
+            <div class="Btn LeftBtn"><</div>
+            <div class="Btn RightBtn">></div>
+            <ul id="ImgBox2">
+                <li class="Item011"></li>
+                <li class="Item012"></li>
+                <li class="Item013"></li>
+                <li class="Item014"></li>
+                <li class="Item015"></li>
+            </ul>
+            <div class="btnmore">
+                <li class="blank1"></li>
+                <li class="more">看更多聯名系列</li>
+                <li class="blank2"></li>
+            </div>                       
+        </div>
+        <h1 class="script4">ANNE系列</h1> 
+        <div class="Banner4">           
+            <div class="Btn LeftBtn"><</div>
+            <div class="Btn RightBtn">></div>
+            <ul id="ImgBox2">
+                <li class="Item016"></li>
+                <li class="Item017"></li>
+                <li class="Item018"></li>
+                <li class="Item019"></li>
+                <li class="Item020  "></li>
+            </ul>
+            <div class="btnmore">
+                <li class="blank1"></li>
+                <li class="more">看更多 ANNE 系列</li>
+                <li class="blank2"></li>
+            </div>                       
+        </div>
+    </article>
+
+    <footer>
+        <!-- 傭有者資訊 建議瀏覽器解析度 瀏覽人數(比較少用，資料庫運作) 版權聲明 鏈結:隱私權政策 網頁安全政策 服務條款 商品的次選單 -->
+        <!-- 段落標籤 -->
+        <div class="footers">
+            <hr>
+            <p>會員登入</p>
+            <hr>
+            <p>會員註冊</p>
+            <hr>
+            <p>如何加入會員流程</p>
+            <hr>
+            <p>訂閱電子報</p>
+            <hr>
+            <p>搜尋實體店鋪資訊</p>
+            <hr>
+            <p>滿意度問卷調查</p>
+            <hr>
+            <p>客服中心</p>
+            <hr>
+            <p>優惠券使用相關</p>
+            <hr>
+            <p>退貨/換貨</p>
+            <hr>
+            <p>大宗採購/團購服務</p>
+            <hr>
+            <p>下載ANNE FLOWER APP</p>
+            <hr>
+            <p>我的最愛</p>
+            <hr>
+            <p>搜尋商品</p>
+            <hr>
+            <p>隱私權保護政策</p>
+            <hr>
+            <p>定型化契約條款</p>
+            <hr>
+            <p id="copyright">Copyright &copy; <span id="Year">2021</span> UNIQLO Co.,Ltd All rights reserved</p>
+        </div>               
+        <!-- 避免被手機板導覽列遮住的空白 -->
+        <div class="Blank">
+        </div>
+    </footer>    
+</body>
+</html>
