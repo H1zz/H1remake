@@ -72,3 +72,44 @@ $Trem: 1rem;
   // 邊框角度設定，建議單位為像素
   border-radius: $Num + px;
 }
+@mixin Items($ItemW) {
+  >.AllItems{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 4px 0px ;
+    background-color: hotpink;
+    >.Item{
+      background-color: white;
+      width: $ItemW;
+      padding-bottom: 20px;    
+      >.script1{        
+        padding: 5px 0px 5px 10px;
+        display: flex;
+        @include liDN;
+        >#sort1{
+          flex: 6;
+        }
+        >#size1{
+          flex: 4;
+        }               
+      }
+      >.script2{
+        padding-left: 10px;
+        @include liDN;
+        >li{
+          padding: 5px 0px 5px 0px;
+        }
+        #name{
+          font-weight: bolder;
+        }
+        #sales{
+          font-size: $Trem*1.5;
+          font-weight: bolder;
+          color: red;
+        }
+      }
+    }
+  }
+}

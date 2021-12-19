@@ -325,9 +325,6 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     width: 50%;
     padding-bottom: 20px;
   }
-  #Main > .AllItems > .Item > .images > a > img {
-    border-radius: 15px;
-  }
   #Main > .AllItems > .Item > .script1 {
     padding: 5px 0px 5px 10px;
     display: -webkit-box;
@@ -723,7 +720,7 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   }
   header #Navbar {
     display: block;
-    background-color: #ffd9f9;
+    background-color: #f09293;
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -782,6 +779,9 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   header #Navbar #memberM #fav {
     width: 80vw;
   }
+  article {
+    background-color: #dddddd;
+  }
   article #Banner {
     background-color: aqua;
   }
@@ -790,33 +790,111 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   }
   article #MFourSort {
     display: block;
-    background-color: grey;
-    height: 15vw;
+    margin-top: 20px;
+    background-color: white;
+    line-height: 20vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 1px 0px;
+            box-shadow: 0px 0px 1px 0px;
+  }
+  article #MFourSort #women {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MFourSort #men {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MFourSort #kids {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MFourSort #baby {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   article #MSixSort {
     display: block;
-    background-color: hotpink;
+    margin-top: 20px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 1px 0px;
+            box-shadow: 0px 0px 1px 0px;
   }
   article #MSixSort #one {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 15vw;
+    line-height: 20vw;
+    text-align: center;
+    border-bottom: 0.1px grey solid;
+  }
+  article #MSixSort #one #one1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MSixSort #one #one2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   article #MSixSort #two {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 15vw;
+    line-height: 20vw;
+    text-align: center;
+    border-bottom: 0.1px grey solid;
+  }
+  article #MSixSort #two #two1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MSixSort #two #two2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   article #MSixSort #three {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 15vw;
+    line-height: 20vw;
+    text-align: center;
+    border-bottom: 0.1px grey solid;
+  }
+  article #MSixSort #three #three1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-right: 0.1px grey solid;
+  }
+  article #MSixSort #three #three2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  article section {
+    margin-top: 20px;
+  }
+  footer .footers {
+    text-align: center;
+  }
+  footer .footers p {
+    line-height: 35px;
   }
   footer .Blank {
     width: 100%;
@@ -894,6 +972,376 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     background-position: center;
     background-size: cover;
     background-image: url(../../img/Banner/005.jpg);
+  }
+  #Main .Sort {
+    padding-top: 15px;
+  }
+  #Main > .AllItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 4px 0px;
+            box-shadow: 0px 0px 4px 0px;
+    background-color: hotpink;
+  }
+  #Main > .AllItems > .Item {
+    background-color: white;
+    width: 50%;
+    padding-bottom: 20px;
+  }
+  #Main > .AllItems > .Item > .script1 {
+    padding: 5px 0px 5px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #Main > .AllItems > .Item > .script1 > #sort1 {
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
+  }
+  #Main > .AllItems > .Item > .script1 > #size1 {
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+  }
+  #Main > .AllItems > .Item > .script2 {
+    padding-left: 10px;
+    list-style-type: none;
+  }
+  #Main > .AllItems > .Item > .script2 > li {
+    padding: 5px 0px 5px 0px;
+  }
+  #Main > .AllItems > .Item > .script2 #name {
+    font-weight: bolder;
+  }
+  #Main > .AllItems > .Item > .script2 #sales {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: red;
+  }
+  #Main .script2 {
+    background-color: white;
+    padding: 20px;
+  }
+  #Main .Banner2 {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  #Main .Banner2 .btnmore {
+    -webkit-box-shadow: 0px 0px 5px 0px;
+            box-shadow: 0px 0px 5px 0px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #Main .Banner2 .btnmore .blank1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner2 .btnmore .more {
+    -webkit-box-flex: 8;
+        -ms-flex: 8;
+            flex: 8;
+    line-height: 60px;
+    background-color: white;
+    text-align: center;
+    border: 1px black solid;
+  }
+  #Main .Banner2 .btnmore .blank2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner2 .Btn {
+    color: white;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 5;
+    top: 147.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+  }
+  #Main .Banner2 .LeftBtn {
+    left: 2.5vw;
+  }
+  #Main .Banner2 .RightBtn {
+    right: 2.5vw;
+  }
+  #Main .Banner2 #ImgBox2 {
+    width: 100vw;
+    list-style-type: none;
+    padding-bottom: 350px;
+    background-color: #d98ffc;
+  }
+  #Main .Banner2 #ImgBox2 li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 345px;
+  }
+  #Main .Banner2 #ImgBox2 .Item006 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/005.jpg);
+  }
+  #Main .Banner2 #ImgBox2 .Item007 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/004.jpg);
+  }
+  #Main .Banner2 #ImgBox2 .Item008 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/003.jpg);
+  }
+  #Main .Banner2 #ImgBox2 .Item009 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/002.jpg);
+  }
+  #Main .Banner2 #ImgBox2 .Item010 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/008.jpg);
+  }
+  #Main .script3 {
+    background-color: white;
+    padding: 20px;
+  }
+  #Main .Banner3 {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  #Main .Banner3 .btnmore {
+    -webkit-box-shadow: 0px 0px 5px 0px;
+            box-shadow: 0px 0px 5px 0px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #Main .Banner3 .btnmore .blank1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner3 .btnmore .more {
+    -webkit-box-flex: 8;
+        -ms-flex: 8;
+            flex: 8;
+    line-height: 60px;
+    background-color: white;
+    text-align: center;
+    border: 1px black solid;
+  }
+  #Main .Banner3 .btnmore .blank2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner3 .Btn {
+    color: white;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 5;
+    top: 147.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+  }
+  #Main .Banner3 .LeftBtn {
+    left: 2.5vw;
+  }
+  #Main .Banner3 .RightBtn {
+    right: 2.5vw;
+  }
+  #Main .Banner3 #ImgBox2 {
+    width: 100vw;
+    list-style-type: none;
+    padding-bottom: 350px;
+    background-color: #d98ffc;
+  }
+  #Main .Banner3 #ImgBox2 li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 345px;
+  }
+  #Main .Banner3 #ImgBox2 .Item011 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/005.jpg);
+  }
+  #Main .Banner3 #ImgBox2 .Item012 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/004.jpg);
+  }
+  #Main .Banner3 #ImgBox2 .Item013 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/003.jpg);
+  }
+  #Main .Banner3 #ImgBox2 .Item014 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/002.jpg);
+  }
+  #Main .Banner3 #ImgBox2 .Item015 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/009.jpg);
+  }
+  #Main .script4 {
+    background-color: white;
+    padding: 20px;
+  }
+  #Main .Banner4 {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  #Main .Banner4 .btnmore {
+    -webkit-box-shadow: 0px 0px 5px 0px;
+            box-shadow: 0px 0px 5px 0px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  #Main .Banner4 .btnmore .blank1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner4 .btnmore .more {
+    -webkit-box-flex: 8;
+        -ms-flex: 8;
+            flex: 8;
+    line-height: 60px;
+    background-color: white;
+    text-align: center;
+    border: 1px black solid;
+  }
+  #Main .Banner4 .btnmore .blank2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    background-color: white;
+  }
+  #Main .Banner4 .Btn {
+    color: white;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 5;
+    top: 147.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+  }
+  #Main .Banner4 .LeftBtn {
+    left: 2.5vw;
+  }
+  #Main .Banner4 .RightBtn {
+    right: 2.5vw;
+  }
+  #Main .Banner4 #ImgBox2 {
+    width: 100vw;
+    list-style-type: none;
+    padding-bottom: 350px;
+    background-color: #d98ffc;
+  }
+  #Main .Banner4 #ImgBox2 li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 345px;
+  }
+  #Main .Banner4 #ImgBox2 .Item016 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/005.jpg);
+  }
+  #Main .Banner4 #ImgBox2 .Item017 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/004.jpg);
+  }
+  #Main .Banner4 #ImgBox2 .Item018 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/003.jpg);
+  }
+  #Main .Banner4 #ImgBox2 .Item019 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/002.jpg);
+  }
+  #Main .Banner4 #ImgBox2 .Item020 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/Banner/010.jpg);
   }
 }
 

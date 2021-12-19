@@ -47,7 +47,7 @@ header {
   }
   #Navbar {
     @include DB;
-    background-color: rgb(255, 217, 249);
+    background-color: rgb(240, 146, 147);
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -81,6 +81,7 @@ header {
   }
 }
 article {
+  background-color: rgb(221, 221, 221);
   #Banner {
     background-color: aqua;
   }
@@ -89,28 +90,85 @@ article {
   }
   #MFourSort {
     @include DB;
-    background-color: grey;
-    height: $W10 * 1.5;
+    margin-top: 20px;
+    background-color:white;
+    line-height: $W10 * 2;
+    // height: $W10 * 1.5;
     display: flex;
+    text-align: center;
+    box-shadow: 0px 0px 1px 0px  ;
+    #women{
+      flex: 1;
+      border-right: 0.1px grey solid;
+    }
+    #men{
+      flex: 1;
+      border-right: 0.1px grey solid;
+    }
+    #kids{
+      flex: 1;
+      border-right: 0.1px grey solid;
+    }
+    #baby{
+      flex: 1;
+    }
   }
   #MSixSort {
     @include DB;
-    background-color: hotpink;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 1px 0px  ;
     #one {
       display: flex;
-      height: $W10 * 1.5;
+      line-height: $W10 * 2;
+      text-align: center;
+      border-bottom: 0.1px grey solid;
+      #one1{
+        flex: 1;
+        border-right: 0.1px grey solid;
+      }
+      #one2{
+        flex: 1;
+      }
     }
     #two {
       display: flex;
-      height: $W10 * 1.5;
+      line-height: $W10 * 2;
+      text-align: center;
+      border-bottom: 0.1px grey solid;
+      #two1{
+        flex: 1;
+        border-right: 0.1px grey solid;
+      }
+      #two2{
+        flex: 1;
+      }
     }
     #three {
       display: flex;
-      height: $W10 * 1.5;
+      line-height: $W10 * 2;
+      text-align: center;
+      border-bottom: 0.1px grey solid;
+      #three1{
+        flex: 1;
+        border-right: 0.1px grey solid;
+      }
+      #three2{
+        flex: 1;
+      }
     }
+  }
+  section{
+    margin-top: 20px;
   }
 }
 footer {
+  .footers{
+    text-align: center;
+    p{
+      line-height: 35px;
+    }
+  }
   .Blank {
     width: 100%;
     height: $W10 * 1.5;
