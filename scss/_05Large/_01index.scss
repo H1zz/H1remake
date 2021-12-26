@@ -120,4 +120,10 @@ article {
   #MSixSort {
     @include DN;
   }
+  #FourSort {
+    @include DB;
+  }
+  .Sort ,.Mscript2 ,.Banner2 ,.Mscript3 ,.Banner3 ,.Mscript4 ,.Banner4{
+    @include DN;
+  }
 }

@@ -1,0 +1,131 @@
+#Main {
+    //   background-color: rgb(79, 0, 82);
+    #Banner {
+      width: $W10 * 10;
+      // 溢位設定，將超出的可視範圍隱藏
+      overflow: hidden;
+      // 定位點:相對定位
+      position: relative;
+  
+      $ImgPadding: 500px;
+      // 父框架的padding 355px - 子框架的padding 350px = 相差值 $Differ
+      $Differ: 5px;
+      .Btn {
+        color: white;
+        width: 25px * 2;
+        // 水平置中
+        text-align: center;
+        // 垂直置中 高度=行距
+        line-height: 25px * 2;
+        font-size: $Trem * 1.2;
+        // 定位點
+        position: absolute;
+        // 移動階層(圖層)
+        z-index: 5;
+        top: ($ImgPadding - $Differ)/2-25;
+        background-color: rgba(255, 255, 255, 0.5);
+        @include Rounded(50);
+      }
+      .LeftBtn {
+        left: 2.5vw;
+      }
+      .RightBtn {
+        // 方向 右邊為0(物件靠又對齊);float 浮點對齊，配合 上下左右 方向推動
+        right: 2.5vw;
+      }
+      #ImgBox {
+        width: $W10 * 10;
+        @include liDN;
+        // 內間距 設定 下方間距，當成圖片的高度，單位為%或vh
+        padding-bottom: $ImgPadding;
+        background-color: rgb(255, 81, 0);
+        li {
+          width: $W10 * 10;
+          float: left;
+          // 定位點:絕對定位:
+          // 1.單獨呼叫時，原點(0,0)會位於畫面(可是範圍)的左上角
+          // 2.物件的父框架呼叫:相對定位(position: relative;)時，功能設定為"重新定位致父框架"
+          position: absolute;
+          // 移動圖片位置;因為不同手機會有不同的中心位置，無法逐一計算，所以要利用背景圖片來修改
+          // margin-left:-257px ;
+          font-size: 72px;
+          text-align: center;
+          // 內間距 設定 下方間距，當成圖片的高度，單位為%或vh(會隨著裝置高度而改變)
+          // 使用px來固定高度
+          // 子框架的padding=父框架的padding - 相差值$Differ
+          padding-bottom: $ImgPadding - $Differ;
+        }
+        .Item01 {
+          width: $W10 * 10;
+          // 背景圖片
+          background-image: url(../../img/banner/005.jpg);
+          // 不重複
+          background-repeat: no-repeat;
+          // 背景圖片 置中對齊
+          background-position: center;
+          // 背景圖片尺寸
+          background-size: cover;
+        }
+        // 以下BANNER圖使用函數帶入
+        .Item02 {
+          // 英文字在數字前，數字會被判定為"文字";數字在英文字或底線( _ )前，數字被判定為數字，"0"為開頭，scss會自動刪除
+          @include BGPhoto(center, cover, Banner, '004.jpg');
+        }
+        .Item03 {
+          @include BGPhoto(center, cover, Banner, '003.jpg');
+        }
+        .Item04 {
+          @include BGPhoto(center, cover, Banner, '002.jpg');
+        }
+        .Item05 {
+          @include BGPhoto(center, cover, Banner, '005.jpg');
+        }
+      }
+    }
+    #FourSort{
+      display: flex;
+    }
+    >.AllItems{
+      display: flex;
+      // flex-wrap: wrap;
+      // width: 100%;
+      // margin-bottom: 20px;
+      // box-shadow: 0px 0px 4px 0px ;
+      // background-color: hotpink;
+      >.Item{
+        $SumW:10%*10/3-3%;
+        width: $SumW;
+        background-color: white;
+        margin: {
+          left: (((10%*10)-($SumW*3))/2)/3;
+          right: (((10%*10)-($SumW*3))/2)/3;;
+        }   
+        >.script1{        
+          padding: 5px 0px 5px 10px;
+          display: flex;
+          @include liDN;
+          >#sort1{
+            flex: 8;
+          }
+          >#size1{
+            flex: 2;
+          }               
+        }
+        >.script2{
+          padding-left: 10px;
+          @include liDN;
+          >li{
+            padding: 5px 0px 5px 0px;
+          }
+          #name{
+            font-weight: bolder;
+          }
+          #sales{
+            font-size: $Trem;
+            font-weight: bolder;
+            color: red;
+          }
+        }
+      }
+    }      
+  }
