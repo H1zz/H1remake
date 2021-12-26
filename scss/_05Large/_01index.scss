@@ -1,5 +1,7 @@
 header {
   .nav1 {
+    margin: 10px 0px 10px 0px;
+    line-height: 60px;
     display: flex;
     // 撐開的空白
     .null1 {
@@ -11,31 +13,30 @@ header {
       @include liDN;
       .SignUp {
         padding: 0px 10px 0px 10px;
-        border-right: grey solid 0.5px;
+        border-right: grey dashed 0.5px;
       }
       .LogIn {
         padding: 0px 10px 0px 10px;
-        border-right: grey solid 0.5px;
+        border-right: grey dashed 0.5px;
       }
       .Member {
         padding: 0px 10px 0px 10px;
-        border-right: grey solid 0.5px;
+        border-right: grey dashed 0.5px;
       }
       .Favorite {
         padding: 0px 10px 0px 10px;
-        border-right: grey solid 0.5px;
+        border-right: grey dashed 0.5px;
       }
       .Cart {
         padding: 0px 10px 0px 10px;
-        border-right: grey solid 0.5px;
+        border-right: grey dashed 0.5px;
       }
       .Mail {
         padding: 0px 10px 0px 10px;
-        border-right: grey solid 0.5px;
+        border-right: grey dashed 0.5px;
       }
       .Service {
         padding: 0px 10px 0px 10px;
-        border-right: grey solid 0.5px;
       }
     }
     #nav1Search {
@@ -43,28 +44,56 @@ header {
     }
   }
   .nav2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0px 10px 0px;
+    line-height: 60px;
     display: flex;
     #Sort1 {
       width: $W10 * 3;
       display: flex;
       @include liDN;
+      .Logo{
+        img{
+          height: 85px;
+        }
+      }
       ul {
         @include DN;
       }
     }
     // 撐開的空格
     .null {
-      width: $W10 * 3;
+      width: $W10 * 2;
     }
     #nav2nav {
-      width: $W10 * 4;
+      width: $W10 * 5;
       display: flex;
       @include liDN;
+      color: white;
+      text-align: center;
       .Info {
-        height: 20px;
+        padding: 0px 15px 0px 15px;
         background-color: rgb(207, 207, 207);
+        flex: 1;
+      }
+      .Collection{
+        padding: 0px 15px 0px 15px;
+        background-color: rgb(155, 155, 155);
+        flex: 1;
+      }
+      .QA{
+        padding: 0px 15px 0px 15px;
+        background-color: rgb(83, 83, 83);
+        flex: 1;
+      }
+      .Location{
+        padding: 0px 15px 0px 15px;
+        background-color: rgb(37, 37, 37);
+        flex: 1;
+      }
+      .Subscribe{
+        padding: 0px 15px 0px 15px;
+        background-color: rgb(12, 12, 12);
+        flex: 1;
       }
     }
   }

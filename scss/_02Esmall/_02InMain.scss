@@ -83,7 +83,7 @@
     }
   }
   .Sort{
-    padding-top: 15px;
+    padding: 15px;
   }
   @include Items(50%);  
   .script2{
@@ -97,7 +97,8 @@
     $ImgPadding: 350px;
     $Differ: 5px;
     .btnmore{
-      box-shadow: 0px 0px 5px 0px;
+      // 陰影 X軸 Y軸 模糊 顏色
+      box-shadow: 1px 1px 5px black;
       margin-bottom: 20px;
       display: flex;
       @include liDN;
