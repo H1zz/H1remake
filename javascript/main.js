@@ -94,7 +94,36 @@ Var_LetCode();
 // }
 
 // 迴圈 for (宣告變數起始值；條件；執行後增加或減少的次數){程式}
-let  i;
-for ( i = 0; i <= 10; i = i + 1){
-    console.log(i);
+// let  i;
+// for ( i = 0; i <= 10; i = i + 1){
+//     console.log(i);
+// }
+login();
+function login(){
+    // 變數 : 承接使用者輸入的資料
+    // 帳號
+    let User;
+    // 密碼
+    let Password;
+
+    // 可輸入訊息的對話視窗
+    User = window.prompt('請輸入帳號');
+
+    // 假設，網站有連接資料庫，帳號與密碼都由資料庫帶出
+    let UserName = 'H1zz';
+    let UserPassword = '12345';
+
+    if ( User == UserName){
+
+        Number = window.prompt('請輸入密碼');
+
+        if ( Number == UserPassword){
+            console.log("歡迎登入!");
+        }else{
+            console.log("帳號與密碼有誤!");
+        }
+
+    }else{
+        console.log("帳號與密碼有誤!");
+    }
 }
