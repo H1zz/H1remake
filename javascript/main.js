@@ -98,7 +98,23 @@ Var_LetCode();
 // for ( i = 0; i <= 10; i = i + 1){
 //     console.log(i);
 // }
-login();
+
+// 迴圈 while (條件) {程式} 與 for 的差別，在於無法指定執行圈數
+WhileCode();
+function WhileCode(){
+    // 總數
+    let Number = 200;
+
+    // 亂數 (系統產生介於 0 ~ 1 之間)，將小數變為整數 (數值要介於 0 ~ 含30，須乘以31)，設定為無條件捨去法
+
+    let attack;
+    attack = Math.floor(Math.random()*31);
+    console.log(attack);
+}
+
+
+
+// login();
 function login(){
     // 變數 : 承接使用者輸入的資料
     // 帳號
