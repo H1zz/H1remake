@@ -122,8 +122,6 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     width: 80vw;
   }
   header #MenuNavbar {
-    display: none;
-    list-style-type: none;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -133,13 +131,26 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     background-color: white;
   }
   header #MenuNavbar #MNlogo {
-    height: 10vh;
+    height: 5vh;
+    border-bottom: 1px solid grey;
   }
   header #MenuNavbar #MNsort {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    line-height: 10vh;
+    line-height: 5vh;
+  }
+  header #MenuNavbar #MNsort1 {
+    line-height: 5vh;
+  }
+  header #MenuNavbar #MNsort1 li {
+    border-bottom: 1px solid grey;
+  }
+  header #MenuNavbar #MNsort2 {
+    line-height: 5vh;
+  }
+  header #MenuNavbar #MNsort2 li {
+    border-bottom: 1px solid grey;
   }
   article {
     background-color: #dddddd;
