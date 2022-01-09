@@ -81,7 +81,7 @@ header {
     }
   }
   #MenuNavbar{
-    // @include DN;
+    @include DN;
     // @include liDN;
     // 寬度與高度(裝置可視範圍)
     width: 100% ;
