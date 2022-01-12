@@ -106,13 +106,13 @@ function WhileCode(){
     let Number = 200;
 
     // 亂數 (系統產生介於 0 ~ 1 之間)，將小數變為整數 (數值要介於 0 ~ 含30，須乘以31)，設定為無條件捨去法
-
+    // 執行下方迴圈直到Number小於0為止(不符合條件時)
     let attack;
     let count = 1;
     while (Number > 0){
         attack = Math.floor(Math.random()*31);
         console.log("亂數為"+attack);
-        // 將計算過後的值，在指定給Number
+        // 將計算過後的值，再指定給Number
         Number = Number - attack;
         console.log("計算結果:"+Number);
     }
