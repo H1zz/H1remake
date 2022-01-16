@@ -64,3 +64,24 @@ function MFourSortContent(){
         A.innerText = MFourSortCon[i];
     }
 }
+
+// MenuNavbar();
+// 行動裝置 選單
+function MenuNavbar(){
+    let MenuNavbar = document.getElementById('MenuNavbar');
+    // 隱藏 手機板選單
+    MenuNavbar.style.display = "none";
+}
+
+// menu 手機板選單按鈕
+// MenuShow();
+function MenuShow(){
+    let Menu = document.getElementById('menuM');        
+    // 顯示手機版選單
+    Menu.style.display = "block";
+}
+
+Pageload();
+function Pageload(){
+    $('header').load("../web/header.html");
+}

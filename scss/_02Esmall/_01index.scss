@@ -81,7 +81,7 @@ header {
     }
   }
   #MenuNavbar{
-    @include DN;
+    // @include DN;
     // @include liDN;
     // 寬度與高度(裝置可視範圍)
     width: 100% ;
@@ -92,7 +92,7 @@ header {
     position: fixed;
     // 靠上
     top: 0;
-    z-index: 99;
+    z-index: 9;
     background-color: white;
     #MNlogo{
       height: 5vh;
