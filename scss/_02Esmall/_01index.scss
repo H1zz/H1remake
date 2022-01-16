@@ -54,6 +54,11 @@ header {
     bottom: 0px;
     width: 100%;
     display: flex;
+    #backM {
+      float: left;
+      @include LFW(2, 0);
+      height: $W10 * 1.5;
+    }
     #menuM {
       float: left;
       @include LFW(2, 0);

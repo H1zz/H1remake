@@ -71,6 +71,16 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     display: -ms-flexbox;
     display: flex;
   }
+  header #Navbar #backM {
+    float: left;
+    height: 15vw;
+  }
+  header #Navbar #backM #Logo {
+    width: 20vw;
+  }
+  header #Navbar #backM #fav {
+    width: 80vw;
+  }
   header #Navbar #menuM {
     float: left;
     height: 15vw;
