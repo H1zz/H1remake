@@ -79,6 +79,41 @@ header {
       height: $W10 * 1.5;
     }
   }
+  #MenuNavbar{
+    @include DN;
+    // @include liDN;
+    // 寬度與高度(裝置可視範圍)
+    width: 100% ;
+    height: 100% ;
+    // 定位點 絕對定位
+    position: absolute;
+    // 停住在畫面上
+    position: fixed;
+    // 靠上
+    top: 0;
+    z-index: 99;
+    background-color: white;
+    #MNlogo{
+      height: 5vh;
+      border-bottom: 1px solid grey;
+    }
+    #MNsort{
+      display: flex;
+      line-height: 5vh;
+    }
+    #MNsort1{
+      line-height: 5vh;
+      li{
+        border-bottom: 1px solid grey;
+      }
+    }
+    #MNsort2{
+      line-height: 5vh;
+      li{
+        border-bottom: 1px solid grey;
+      }
+    }
+  }
 }
 article {
   background-color: rgb(221, 221, 221);
@@ -89,29 +124,32 @@ article {
     @include DN;
   }
   #MFourSort {
-    @include DB;
-    margin-top: 20px;
-    background-color:white;
-    line-height: $W10 * 2;
-    // height: $W10 * 1.5;
-    display: flex;
-    text-align: center;
-    box-shadow: 0px 0px 1px 0px  ;
-    #women{
-      flex: 1;
-      border-right: 0.1px grey solid;
-    }
-    #men{
-      flex: 1;
-      border-right: 0.1px grey solid;
-    }
-    #kids{
-      flex: 1;
-      border-right: 0.1px grey solid;
-    }
-    #baby{
-      flex: 1;
-    }
+    #MFS{
+      @include liDN;
+      @include DB;
+      margin-top: 20px;
+      background-color:white;
+      line-height: $W10 * 2;
+      // height: $W10 * 1.5;
+      display: flex;
+      text-align: center;
+      box-shadow: 0px 0px 1px 0px  ;
+      #women{
+        flex: 1;
+        border-right: 0.1px grey solid;
+      }
+      #men{
+        flex: 1;
+        border-right: 0.1px grey solid;
+      }
+      #kids{
+        flex: 1;
+        border-right: 0.1px grey solid;
+      }
+      #baby{
+        flex: 1;
+      }
+    }    
   }
   #MSixSort {
     @include DB;

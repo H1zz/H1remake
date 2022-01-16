@@ -122,29 +122,32 @@ article {
     @include DN;
   }
   #MFourSort {
-    @include DB;
-    margin-top: 20px;
-    background-color:white;
-    line-height: $W10 * 2;
-    // height: $W10 * 1.5;
-    display: flex;
-    text-align: center;
-    box-shadow: 0px 0px 1px 0px  ;
-    #women{
-      flex: 1;
-      border-right: 0.1px grey solid;
-    }
-    #men{
-      flex: 1;
-      border-right: 0.1px grey solid;
-    }
-    #kids{
-      flex: 1;
-      border-right: 0.1px grey solid;
-    }
-    #baby{
-      flex: 1;
-    }
+    #MFS{
+      @include liDN;
+      @include DB;
+      margin-top: 20px;
+      background-color:white;
+      line-height: $W10 * 2;
+      // height: $W10 * 1.5;
+      display: flex;
+      text-align: center;
+      box-shadow: 0px 0px 1px 0px  ;
+      #women{
+        flex: 1;
+        border-right: 0.1px grey solid;
+      }
+      #men{
+        flex: 1;
+        border-right: 0.1px grey solid;
+      }
+      #kids{
+        flex: 1;
+        border-right: 0.1px grey solid;
+      }
+      #baby{
+        flex: 1;
+      }
+    }    
   }
   #MSixSort {
     @include DB;

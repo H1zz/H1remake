@@ -159,7 +159,8 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   article #FourSort {
     display: none;
   }
-  article #MFourSort {
+  article #MFourSort #MFS {
+    list-style-type: none;
     display: block;
     margin-top: 20px;
     background-color: white;
@@ -171,25 +172,25 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     -webkit-box-shadow: 0px 0px 1px 0px;
             box-shadow: 0px 0px 1px 0px;
   }
-  article #MFourSort #women {
+  article #MFourSort #MFS #women {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     border-right: 0.1px grey solid;
   }
-  article #MFourSort #men {
+  article #MFourSort #MFS #men {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     border-right: 0.1px grey solid;
   }
-  article #MFourSort #kids {
+  article #MFourSort #MFS #kids {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     border-right: 0.1px grey solid;
   }
-  article #MFourSort #baby {
+  article #MFourSort #MFS #baby {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -816,6 +817,38 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   header #Navbar #memberM #fav {
     width: 80vw;
   }
+  header #MenuNavbar {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+  }
+  header #MenuNavbar #MNlogo {
+    height: 5vh;
+    border-bottom: 1px solid grey;
+  }
+  header #MenuNavbar #MNsort {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 5vh;
+  }
+  header #MenuNavbar #MNsort1 {
+    line-height: 5vh;
+  }
+  header #MenuNavbar #MNsort1 li {
+    border-bottom: 1px solid grey;
+  }
+  header #MenuNavbar #MNsort2 {
+    line-height: 5vh;
+  }
+  header #MenuNavbar #MNsort2 li {
+    border-bottom: 1px solid grey;
+  }
   article {
     background-color: #dddddd;
   }
@@ -825,7 +858,8 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   article #FourSort {
     display: none;
   }
-  article #MFourSort {
+  article #MFourSort #MFS {
+    list-style-type: none;
     display: block;
     margin-top: 20px;
     background-color: white;
@@ -837,25 +871,25 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     -webkit-box-shadow: 0px 0px 1px 0px;
             box-shadow: 0px 0px 1px 0px;
   }
-  article #MFourSort #women {
+  article #MFourSort #MFS #women {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     border-right: 0.1px grey solid;
   }
-  article #MFourSort #men {
+  article #MFourSort #MFS #men {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     border-right: 0.1px grey solid;
   }
-  article #MFourSort #kids {
+  article #MFourSort #MFS #kids {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     border-right: 0.1px grey solid;
   }
-  article #MFourSort #baby {
+  article #MFourSort #MFS #baby {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
