@@ -2,7 +2,7 @@ MenuShow2();
 function MenuShow2(){
     //  $ jQuery的變數前綴詞
 
-    // 隱藏選單
+    // 隱藏選單與關閉按鈕
     $('#MenuNavbar').hide();
     $('#backM').hide();
 
