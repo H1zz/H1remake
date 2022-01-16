@@ -261,10 +261,10 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
   article section {
     margin-top: 20px;
   }
-  footer .footers {
+  footer #footers {
     text-align: center;
   }
-  footer .footers p {
+  footer #footers p {
     line-height: 35px;
   }
   footer .Blank {
