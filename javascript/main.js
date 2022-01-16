@@ -29,16 +29,38 @@ function CopyRightContent(){
 MFourSortContent();
 function MFourSortContent(){
     // 新增標籤 div
-    let MFourSortDiv1 = document.createElement('div');
-    let MFourSortDiv2 = document.createElement('div');
+    let MFourSortUl = document.createElement('ul');
 
-    // 在 SmallNav 內新增，宣告變數
+    // 在 MFourSort 內新增，宣告變數
     let MFS = document.getElementById('MFourSort');
 
     // 建立 div 框架，給予id名稱
-    MFS.appendChild(MFourSortDiv1);
+    MFS.appendChild(MFourSortUl);
     
     // 賦予屬性 id 或 class 
-    MFourSortDiv1.setAttribute("id","MFS");
+    MFourSortUl.setAttribute("id","MFS");   
+    
+    let MFourSortItem = ["women","men","kids","baby"];
 
+    let MFourSortCon = ["WOMEN","MEN","KIDS","BABY"];
+
+    // 新增標籤時，程式的運作方式為:先新增標籤，賦予屬性，在指定新增的外框架(此為一個迴圈)
+    // 迴圈內的數字 ，是因為陣列而產生，故要隨著陣列值的數量而自動增減
+
+    for (let i= 0; i< MFourSortItem.length; i++) {
+        let MFourSortLi = document.createElement('li');
+        // 新增屬性
+        MFourSortLi.setAttribute("id",MFourSortItem[i]); 
+        // ul 內新增 li 清單
+        MFourSortUl.appendChild(MFourSortLi);
+
+        // 新增連結 "a"
+        let A = document.createElement('a');
+        // 新增屬性 假連結 javascript:;
+        A.setAttribute("href","javascript:;")
+        // li 內新增 a 連結
+        MFourSortLi.appendChild(A);
+        // 置入 陣列內容(文字)
+        A.innerText = MFourSortCon[i];
+    }
 }
