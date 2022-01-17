@@ -11,19 +11,7 @@ function TimeYear(){
 }
 // 新增 html 的標籤與內容
 
-CopyRightContent();
-function CopyRightContent(){
-    let div = document.createElement('div');
 
-    let footers = document.getElementById('footers');
-
-    footers.appendChild(div);
-    div.innerHTML = ' Copyright &copy<span id="Year"></span> AnneFlower Co.,Ltd All rights reserved ';
-
-    TimeYear();
-    let Address = document.getElementById('footers');
-    Address.append(div);
-}
 
 // 新增 MFourSort 的內容
 MFourSortContent();
@@ -84,4 +72,9 @@ function MenuShow(){
 Pageload();
 function Pageload(){
     $('header').load("../web/header.html");
+}
+
+Footer();
+function Footer(){
+    $('footer').load("../web/footer.html");
 }
