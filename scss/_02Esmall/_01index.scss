@@ -85,12 +85,12 @@ header {
       height: $W10 * 1.5;
     }
   }
-  #MenuNavbar{
+  #MenuNavbar {
     // @include DN;
     // @include liDN;
     // 寬度與高度(裝置可視範圍)
-    width: 100% ;
-    height: 100% ;
+    width: 100%;
+    height: 100%;
     // 定位點 絕對定位
     position: absolute;
     // 停住在畫面上
@@ -99,23 +99,23 @@ header {
     top: 0;
     z-index: 9;
     background-color: white;
-    #MNlogo{
+    #MNlogo {
       height: 5vh;
       border-bottom: 1px solid grey;
     }
-    #MNsort{
+    #MNsort {
       display: flex;
       line-height: 5vh;
     }
-    #MNsort1{
+    #MNsort1 {
       line-height: 5vh;
-      li{
+      li {
         border-bottom: 1px solid grey;
       }
     }
-    #MNsort2{
+    #MNsort2 {
       line-height: 5vh;
-      li{
+      li {
         border-bottom: 1px solid grey;
       }
     }
@@ -127,48 +127,52 @@ article {
     @include DN;
   }
   #MFourSort {
-    #MFS{
+    #MFS {
       @include liDN;
       @include DB;
       margin-top: 20px;
-      background-color:white;
+      background-color: white;
       line-height: $W10 * 2;
       // height: $W10 * 1.5;
       display: flex;
       text-align: center;
-      box-shadow: 0px 0px 1px 0px  ;
-      #women{
+      box-shadow: 0px 0px 1px 0px;
+      a {
+        color: rgb(245, 99, 99);
+        text-decoration: none;
+      }
+      #women {
         flex: 1;
         border-right: 0.1px grey solid;
       }
-      #men{
+      #men {
         flex: 1;
         border-right: 0.1px grey solid;
       }
-      #kids{
+      #kids {
         flex: 1;
         border-right: 0.1px grey solid;
       }
-      #baby{
+      #baby {
         flex: 1;
       }
-    }    
+    }
   }
   #MSixSort {
     @include DB;
     margin-top: 20px;
     background-color: white;
-    box-shadow: 0px 0px 1px 0px  ;
+    box-shadow: 0px 0px 1px 0px;
     #one {
       display: flex;
       line-height: $W10 * 2;
       text-align: center;
       border-bottom: 0.1px grey solid;
-      #one1{
+      #one1 {
         flex: 1;
         border-right: 0.1px grey solid;
       }
-      #one2{
+      #one2 {
         flex: 1;
       }
     }
@@ -177,11 +181,11 @@ article {
       line-height: $W10 * 2;
       text-align: center;
       border-bottom: 0.1px grey solid;
-      #two1{
+      #two1 {
         flex: 1;
         border-right: 0.1px grey solid;
       }
-      #two2{
+      #two2 {
         flex: 1;
       }
     }
@@ -190,23 +194,23 @@ article {
       line-height: $W10 * 2;
       text-align: center;
       border-bottom: 0.1px grey solid;
-      #three1{
+      #three1 {
         flex: 1;
         border-right: 0.1px grey solid;
       }
-      #three2{
+      #three2 {
         flex: 1;
       }
     }
   }
-  section{
+  section {
     margin-top: 20px;
   }
 }
 footer {
-  #footers{
+  #footers {
     text-align: center;
-    p{
+    p {
       line-height: 35px;
     }
   }

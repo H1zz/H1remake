@@ -181,6 +181,10 @@ em 基礎為 1em=16px ; rem 基礎為 1rem=16px
     -webkit-box-shadow: 0px 0px 1px 0px;
             box-shadow: 0px 0px 1px 0px;
   }
+  article #MFourSort #MFS a {
+    color: #f56363;
+    text-decoration: none;
+  }
   article #MFourSort #MFS #women {
     -webkit-box-flex: 1;
         -ms-flex: 1;
